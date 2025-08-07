@@ -1,3 +1,4 @@
+// solution 1
 function solution(my_string) {
     let string = [];
     let result = '';
@@ -9,4 +10,12 @@ function solution(my_string) {
         result += value;
     }
     return result;
+}
+// solution 2
+function solution(my_string) {
+    const result = my_string.split('');
+    for (let i = 0; i < result.length; i ++){
+        result[i] = result[i].toLowerCase();
+    }
+    return result.sort().join('');
 }
