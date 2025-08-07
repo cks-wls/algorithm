@@ -1,3 +1,4 @@
+// solution 1
 function solution(num_list) {
     const result = [];
     for (let i = 0; i < num_list.length; i++){
@@ -13,4 +14,15 @@ function solution(num_list) {
     }
     return result;
     
+}
+// solution 2
+function solution(num_list) {
+    let lastNum = num_list[num_list.length -1];
+    let objectNum = num_list[num_list.length -2];
+    if (lastNum > objectNum){
+        num_list.push(lastNum - objectNum);
+    }else{
+        num_list.push(lastNum * 2);
+    }
+    return num_list;
 }
