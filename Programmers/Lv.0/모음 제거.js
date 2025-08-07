@@ -1,3 +1,4 @@
+// solution 1
 function solution(my_string) {
     let result = "";
     for (let i = 0; i < my_string.length ; i++){
@@ -7,6 +8,17 @@ function solution(my_string) {
         }else{
             result += value;
         }
+    }
+    return result;
+}
+// solution 2
+function solution(my_string) {
+    const vowel = ['a', 'e', 'i' ,'o', 'u'];
+    let result = '';
+    for (let value of my_string){
+        if (!vowel.includes(value)){
+            result += value;
+        }       
     }
     return result;
 }

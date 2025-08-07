@@ -1,4 +1,4 @@
-// solition 1
+// solution 1
 function solution(sides) {
     let longSide = sides[0] ;
     let order;
