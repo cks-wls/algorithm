@@ -1,3 +1,4 @@
+// solution 1
 function solution(binomial) {
     let a = '';
     let op = '';
@@ -24,6 +25,27 @@ function solution(binomial) {
             break;
         case '*' :
             return Number(a) * Number(b);
+            break;
+    }
+}
+// solution 2
+function solution(binomial) {
+    const arr = binomial.split(' ');
+    let num1 = Number(arr[0]);
+    let op = arr[1];
+    let num2 = Number(arr[2]);
+    return calculate(num1, op, num2);
+}
+function calculate (num1, op, num2){
+    switch(op){
+        case '+':
+            return num1 + num2;
+            break;
+        case '-' :
+            return num1 - num2;
+            break;
+        case '*':
+            return num1 * num2;
             break;
     }
 }
