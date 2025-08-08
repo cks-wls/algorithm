@@ -1,3 +1,4 @@
+// solution 1
 function solution(myString) {
     const result = [];
     const answer = [];
@@ -25,4 +26,13 @@ function solution(myString) {
         answer.push(value.length);
     }
     return answer;
+}
+// solution 2
+function solution(myString) {
+    const arr = myString.split('x');
+    const result = [];
+    for (let value of arr){
+        result.push(value.length);
+    }
+    return result;
 }
