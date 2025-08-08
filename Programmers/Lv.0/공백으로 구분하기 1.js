@@ -1,3 +1,4 @@
+// solution 1
 function solution(my_string) {
     const result = [];
     let str = '';
@@ -14,5 +15,10 @@ function solution(my_string) {
             result.push(str);
         }
     }
+    return result;
+}
+// solution 2
+function solution(my_string) {
+    const result = my_string.split(' ');
     return result;
 }
