@@ -1,3 +1,4 @@
+// solution 1
 function solution(n) {
     const arr = [];
     let str = n +'';
@@ -10,4 +11,11 @@ function solution(n) {
         result += value;
     }
     return Number(result);
+}
+// solution 2
+function solution(n) {
+    const result = String(n).split('');
+    result.sort((a,b) => b-a);
+    let answer = result.join('');
+    return Number(answer);
 }
