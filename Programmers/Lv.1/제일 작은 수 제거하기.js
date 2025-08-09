@@ -1,3 +1,4 @@
+// solution 1
 function solution(arr) {
     const arr1 = arr.slice();
     const result =[];
@@ -15,4 +16,14 @@ function solution(arr) {
         }
     }
     return result;
+}
+// solution 2
+function solution(arr) {
+    let minNum = Math.min(...arr);
+    let index = arr.indexOf(minNum);
+    arr.splice(index,1);
+    if (arr.length === 0){
+        return [-1];
+    }
+    return arr;
 }
