@@ -1,7 +1,4 @@
 function solution(my_string, target) {
-    if (my_string.includes(target)){
-        return 1;
-    }else{
-        return 0;
-    }
+  const result = my_string.includes(target) ? 1 : 0;
+  return result;
 }
