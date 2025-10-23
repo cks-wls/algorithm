@@ -1,3 +1,4 @@
+// solution 1
 function solution(k, score) {
   const arr = [];
   const answer = [];
