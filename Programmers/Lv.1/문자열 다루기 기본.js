@@ -1,15 +1,16 @@
+// solution 1
 function solution(s) {
-    let result = '';
-    if (s.length === 4 || s.length === 6){
-        for (let value of s){
-            if (isNaN(Number(value))){
-                return false;
-            }else{
-                result = true;
-            }
-        }
-    }else{
+  let result = "";
+  if (s.length === 4 || s.length === 6) {
+    for (let value of s) {
+      if (isNaN(Number(value))) {
         return false;
+      } else {
+        result = true;
+      }
     }
-    return result;
+  } else {
+    return false;
+  }
+  return result;
 }
